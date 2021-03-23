@@ -19,8 +19,14 @@
     </style>
 </head>
 
+<p> Tangal/Waktu: <span id="tgl"></span></p>
+<script>
+    var dt = new Date()
+    document.getElementById("tgl").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) + "/" + (("0"+dt.getDate()).slice(-2)) +"/"+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()+1).slice(-2)) + ":"+(("0"+dt.getMinutes()+1).slice(-2));
+</script>
+
 <p style="text-align: center;">
-    <font color="red"> ALL MY ACCOUNT! </font>
+    <font color="red"> SOSIAL ACCOUNT! </font>
 </p>
 
 <body>
@@ -91,6 +97,7 @@
 
     <a style="text-align: center; vertical-align: bottom;">
         <font color="white"> auto play song: a world of chaos by Powfu </font>
+        <br>
         <font color="white"> gaada musik? browsermu kentang </font>
 
     </a>
