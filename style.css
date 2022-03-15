@@ -28,41 +28,71 @@
   visibility: hidden;
 }
 
-@media (min-width: 768px) {
-  .container-popup {
-    width: 30%;
-  }
-}
-@media (max-width: 767px) {
-  .container-popup {
-    width: 30%;
-  }
-}
-.container-popup {
-  position: relative;
-  margin: 5% auto;
-  padding: 4px 3px;
-  background-color: #e1fff5;
-  color: #333;
-  border-radius: 8px;
-}
-.container-popup img {
-  width: 100%;
+
+.mytable {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
-.container-popup font {
-  text-align: center;
-  text-shadow: aqua;
-  text-decoration-line: underline;
+.mytable thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
 }
-.close {
-  position: absolute;
-  top: 3px;
-  right: 3px;
-  background-color: #33898b;
-  padding: 7px 10px;
-  font-size: 15px;
-  text-decoration: none;
-  line-height: 1;
-  color: #fff;
+
+.mytable th,
+.mytable td {
+    padding: 12px 15px;
+}
+
+.mytable tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.mytable tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.mytable tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.mytable tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+
+
+
+
+
+
+.hiden {
+  display: none;
+  align-content: center;
+}
+
+.hiden h4 {
+  padding-top: 0%;
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  color: antiquewhite;
+}
+
+@media screen and (orientation:portrait) {
+  .content {
+    display: none;
+  }
+  body {
+    background-image: none;
+    background-color: black;
+  }
+  .hiden {
+    display: contents;
+  }
 }
