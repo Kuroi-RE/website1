@@ -66,11 +66,12 @@
     color: #009879;
 }
 
-
-
-
-
-
+.myimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 .hiden {
   display: none;
@@ -78,7 +79,7 @@
 }
 
 .hiden h4 {
-  padding-top: 0%;
+  padding-top: 20%;
   font-size: 30px;
   font-family: 'Courier New', Courier, monospace;
   color: antiquewhite;
